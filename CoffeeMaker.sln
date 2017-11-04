@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.Interfaces", "CoffeeMaker\CoffeeMaker.Interfaces\CoffeeMaker.Interfaces.csproj", "{76EE7563-8375-4AC5-B009-6847A204BC97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.Models", "CoffeeMaker\CoffeeMaker.Models\CoffeeMaker.Models.csproj", "{23EAEA4C-7771-4918-B7E7-02A6E7EB73F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.Services", "CoffeeMaker\CoffeeMaker.Services\CoffeeMaker.Services.csproj", "{DB271157-CFB5-45C2-B80B-8D17DD177F7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.Services.Tests", "CoffeeMaker\CoffeeMaker.Services.Tests\CoffeeMaker.Services.Tests.csproj", "{3DAC9169-B3AC-48E5-AF9A-035A2CCB1931}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76EE7563-8375-4AC5-B009-6847A204BC97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76EE7563-8375-4AC5-B009-6847A204BC97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76EE7563-8375-4AC5-B009-6847A204BC97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76EE7563-8375-4AC5-B009-6847A204BC97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23EAEA4C-7771-4918-B7E7-02A6E7EB73F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23EAEA4C-7771-4918-B7E7-02A6E7EB73F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23EAEA4C-7771-4918-B7E7-02A6E7EB73F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23EAEA4C-7771-4918-B7E7-02A6E7EB73F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB271157-CFB5-45C2-B80B-8D17DD177F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB271157-CFB5-45C2-B80B-8D17DD177F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB271157-CFB5-45C2-B80B-8D17DD177F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB271157-CFB5-45C2-B80B-8D17DD177F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DAC9169-B3AC-48E5-AF9A-035A2CCB1931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DAC9169-B3AC-48E5-AF9A-035A2CCB1931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DAC9169-B3AC-48E5-AF9A-035A2CCB1931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DAC9169-B3AC-48E5-AF9A-035A2CCB1931}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
