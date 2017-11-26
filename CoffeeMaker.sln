@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.Interfaces", "CoffeeMaker\CoffeeMaker.Interfaces\CoffeeMaker.Interfaces.csproj", "{76EE7563-8375-4AC5-B009-6847A204BC97}"
 EndProject
@@ -10,6 +10,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.Services", "CoffeeMaker\CoffeeMaker.Services\CoffeeMaker.Services.csproj", "{DB271157-CFB5-45C2-B80B-8D17DD177F7D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.Services.Tests", "CoffeeMaker\CoffeeMaker.Services.Tests\CoffeeMaker.Services.Tests.csproj", "{3DAC9169-B3AC-48E5-AF9A-035A2CCB1931}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9A05D497-189B-424B-BF88-7C443401DA32}"
+	ProjectSection(SolutionItems) = preProject
+		BuildCI.xml = BuildCI.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.Console", "CoffeeMaker\CoffeeMaker.Console\CoffeeMaker.Console.csproj", "{8D4B2B56-85E4-471E-AFF5-3AF33DA0F396}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +40,15 @@ Global
 		{3DAC9169-B3AC-48E5-AF9A-035A2CCB1931}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DAC9169-B3AC-48E5-AF9A-035A2CCB1931}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DAC9169-B3AC-48E5-AF9A-035A2CCB1931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D4B2B56-85E4-471E-AFF5-3AF33DA0F396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4B2B56-85E4-471E-AFF5-3AF33DA0F396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D4B2B56-85E4-471E-AFF5-3AF33DA0F396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D4B2B56-85E4-471E-AFF5-3AF33DA0F396}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26ADFF25-6432-4DC5-A8D3-AD21BC4A852C}
 	EndGlobalSection
 EndGlobal

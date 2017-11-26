@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project
+    DefaultTargets="Test"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <WorkingFolder>$(MSBuildProjectDirectory)</WorkingFolder>
+    <Configuration>Release</Configuration>
+    <SolutionFile>CoffeeMaker.sln</SolutionFile>
+  </PropertyGroup>
+
+
+  <Target Name="BuildAll" DependsOnTargets="Compile;Test" />
+
+  <Target Name="Compile">
+    <Message Text="=== COMPILING $(Configuration) configuration ===" />
+    <MSBuild Projects="$(SolutionFile)"
+             Properties="Configuration=$(Configuration)" />
+  </Target>
+
+  <UsingTask
+    AssemblyFile="packages\xunit.runner.msbuild.2.1.0\build\portable-net45+win8+wp8+wpa81\xunit.runner.msbuild.dll"
+    TaskName="Xunit.Runner.MSBuild.xunit" />
+
+  <ItemGroup>
+    <TestAssemblies Include="**\bin\Release\*.tests.dll" />
+  </ItemGroup>
+
+  <Target Name="Test">
+    <Message Text="=== Running unit tests : $(Configuration) configuration ===" />
+    <xunit
+        Assemblies="@(TestAssemblies)"
+        Xml="..\TestResults-$(PROCESSOR_ARCHITECTURE).xml"
+        Html="..\TestResults-$(PROCESSOR_ARCHITECTURE).html" />
+  </Target>
+
+
+</Project>
