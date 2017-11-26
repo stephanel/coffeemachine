@@ -30,8 +30,8 @@
     <Message Text="=== Running unit tests : $(Configuration) configuration ===" />
     <xunit
         Assemblies="@(TestAssemblies)"
-        Xml="..\TestResults-$(PROCESSOR_ARCHITECTURE).xml"
-        Html="..\TestResults-$(PROCESSOR_ARCHITECTURE).html" />
+        Xml="TestResults-$(Configuration).xml"
+        Html="TestResults-$(Configuration).html" />
   </Target>
 
 
